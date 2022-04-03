@@ -17,6 +17,7 @@
         <div class="text-center" data-name="add">
             <button type="button" class="btn btn-primary" onclick="criarCard()">Adicionar Card</button>
         </div>
+
         <div class="card-container">
 
         </div>
@@ -28,18 +29,22 @@
     <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-firestore.js"></script>
     <!-- Inicializa o firebase -->
     <script>
-        var config = {
-            apiKey: "",
-            authDomain: "",
-            databaseURL: "",
-            projectId: "",
-            storageBucket: "",
-            messagingSenderId: ""
+        const firebaseConfig = {
+            apiKey: "AIzaSyBadpZVE9w-emZXMjB-augXkh4g57JBEeM",
+            authDomain: "ejl-firebasewebapps.firebaseapp.com",
+            databaseURL: "https://ejl-firebasewebapps-default-rtdb.firebaseio.com",
+            projectId: "ejl-firebasewebapps",
+            storageBucket: "ejl-firebasewebapps.appspot.com",
+            messagingSenderId: "245691206869",
+            appId: "1:245691206869:web:f8cfae0dc8d9b56168665c",
+            measurementId: "G-ZK6EHTD3TJ"
         };
-        firebase.initializeApp(config);
+
+        firebase.initializeApp(firebaseConfig);
+
         // Apenas para remover um warning
         firebase.firestore().settings({
-            timestampsInSnapshots: true,
+            timestampsInSnapshots: true
         });
     </script>
     <!-- Nosso app -->

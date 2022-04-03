@@ -74,6 +74,8 @@ function curtir(id) {
     // utilizando set()
     ref.child(id + "/curtidas").set(countNumber).then(() => { 
         count.innerText = countNumber;
+    }, err => {
+        console.log("Erro ao curtir", err);
     });
 };
 
