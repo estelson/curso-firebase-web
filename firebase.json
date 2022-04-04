@@ -8,7 +8,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/6 - Hosting/public/index.html"
+        "destination": "/index.html"
       }
     ]
   }
