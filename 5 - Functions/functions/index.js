@@ -1,12 +1,14 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 admin.initializeApp({
-    apiKey: "AIzaSyBIhYl2WZKchbkZq95yx02s-SnW_hIY4tI",
-    authDomain: "curso-firebase-webapps.firebaseapp.com",
-    databaseURL: "https://curso-firebase-webapps.firebaseio.com",
-    projectId: "curso-firebase-webapps",
-    storageBucket: "curso-firebase-webapps.appspot.com",
-    messagingSenderId: "103261283431"
+    apiKey: "AIzaSyBadpZVE9w-emZXMjB-augXkh4g57JBEeM",
+    authDomain: "ejl-firebasewebapps.firebaseapp.com",
+    databaseURL: "https://ejl-firebasewebapps-default-rtdb.firebaseio.com",
+    projectId: "ejl-firebasewebapps",
+    storageBucket: "ejl-firebasewebapps.appspot.com",
+    messagingSenderId: "245691206869",
+    appId: "1:245691206869:web:f8cfae0dc8d9b56168665c",
+    measurementId: "G-ZK6EHTD3TJ"
 });
 
 exports.addCard = functions.https.onRequest((request, response) => {
