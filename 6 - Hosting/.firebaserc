@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "ejl-firebasewebapps"
-  }
+    "default": "ejl-firebasewebapps",
+    "ejl-firebasewebapps": "ejl-firebasewebapps"
+  },
+  "targets": {}
 }
