@@ -18,20 +18,27 @@
             <div class="col-12 mb-3 text-center">
                 <div class="input-group mb-3">
                     <input type="email" class="form-control" id="email" placeholder="E-mail" aria-label="E-mail" aria-describedby="email">
+
                     <div class="input-group-append">
                         <span class="input-group-text">Email</span>
                     </div>
                 </div>
+
                 <div class="input-group mb-3">
                     <input type="password" class="form-control" id="senha" placeholder="Senha" aria-label="Senha" aria-describedby="senha">
+
                     <div class="input-group-append">
                         <span class="input-group-text">Senha</span>
                     </div>
                 </div>
+
                 <button class="btn btn-primary" onclick="createLogin()">Criar conta</button>
                 <button class="btn btn-primary" onclick="loginEmail()">Login Email</button>
+                <button class="btn btn-danger" onclick="deletaUsuario()">Exclui usuário</button>
+
                 <hr>
             </div>
+            
             <div class="col-12 mb-3 text-center"><button class="btn btn-primary" onclick="loginFacebook()">Facebook</button><hr></div>
             <div class="col-12 mb-3 text-center"><button class="btn btn-primary" onclick="loginGoogle()">Google</button><hr></div>
             <div class="col-12 mb-3 text-center"><button class="btn btn-primary" onclick="loginGithub()">Github</button><hr></div>
@@ -47,15 +54,18 @@
 
     <!-- Inicializa o firebase -->
     <script>
-        var config = {
-            apiKey: "",
-            authDomain: "",
-            databaseURL: "",
-            projectId: "",
-            storageBucket: "",
-            messagingSenderId: ""
+        const firebaseConfig = {
+            apiKey: "AIzaSyBadpZVE9w-emZXMjB-augXkh4g57JBEeM",
+            authDomain: "ejl-firebasewebapps.firebaseapp.com",
+            databaseURL: "https://ejl-firebasewebapps-default-rtdb.firebaseio.com",
+            projectId: "ejl-firebasewebapps",
+            storageBucket: "ejl-firebasewebapps.appspot.com",
+            messagingSenderId: "245691206869",
+            appId: "1:245691206869:web:f8cfae0dc8d9b56168665c",
+            measurementId: "G-ZK6EHTD3TJ"
         };
-        firebase.initializeApp(config);
+
+        firebase.initializeApp(firebaseConfig);
     </script>
     <!-- Nosso app -->
     <script src="./js/app.js"></script>
